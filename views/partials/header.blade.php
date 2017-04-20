@@ -6,11 +6,11 @@
             <!-- BEGIN: BRAND -->
             <div class="c-navbar-wrapper clearfix">
 
-                <div class="c-brand c-pull-left">
+                <div class="c-brand c-pull-left" style="margin-bottom: 0; height: 45px;">
                     <a href="{{ url(locale()) }}" class="c-logo">
                         <img src="{{ Theme::url('img/logos/logo2-fixed.png') }}" alt="{{ setting('core::site-name-mini') }}" class="c-desktop-logo">
-                        <img src="{{ Theme::url('img/logos/logo2-fixed.png') }}" alt="{{ setting('core::site-name-mini') }}" class="c-desktop-logo-inverse">
-                        <img src="{{ Theme::url('img/logos/logo2-mobile.png') }}" alt="{{ setting('core::site-name-mini') }}" class="c-mobile-logo"> </a>
+                        <img src="{{ Theme::url('img/logos/logo2-fixed.png') }}" alt="{{ setting('core::site-name-mini') }}" class="c-desktop-logo-inverse" style="height: 65px;">
+                        <img src="{{ Theme::url('img/logos/logo2-mobile.png') }}" alt="{{ setting('core::site-name-mini') }}" class="c-mobile-logo" style="height: 65px;"> </a>
                     <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
                         <span class="c-line"></span>
                         <span class="c-line"></span>
