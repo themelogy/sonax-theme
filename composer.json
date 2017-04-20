@@ -1,7 +1,7 @@
 {
   "name": "themelogy/sonax-theme",
+  "type": "asgard-theme",
   "description": "",
-  "version": "1.0.3",
   "license": "MIT",
   "require": {
     "php": ">=5.5",
