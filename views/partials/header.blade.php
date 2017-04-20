@@ -8,11 +8,7 @@
 
                 <div class="c-brand c-pull-left">
                     <a href="{{ url(locale()) }}" class="c-logo">
-                        @if(View::hasSection('logo'))
-                            @yield('logo')
-                        @else
-                            <img src="{{ Theme::url('img/logos/logo2-fixed.png') }}" alt="{{ setting('core::site-name-mini') }}" class="c-desktop-logo">
-                        @endif
+                        <img src="{{ Theme::url('img/logos/logo2-fixed.png') }}" alt="{{ setting('core::site-name-mini') }}" class="c-desktop-logo">
                         <img src="{{ Theme::url('img/logos/logo2-fixed.png') }}" alt="{{ setting('core::site-name-mini') }}" class="c-desktop-logo-inverse">
                         <img src="{{ Theme::url('img/logos/logo2-mobile.png') }}" alt="{{ setting('core::site-name-mini') }}" class="c-mobile-logo"> </a>
                     <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
