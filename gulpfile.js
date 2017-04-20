@@ -68,6 +68,7 @@ elixir(function (mix) {
         .copy('resources/assets/css/base/themes/default.css', 'assets/css/base/themes')
         .copy('resources/assets/css/base/custom.css', 'assets/css/base')
         .copy('resources/assets/css', 'assets/css')
+        .copy('resources/assets/sass', 'assets/sass')
         .copy('resources/assets/js', 'assets/js')
         .copy('resources/assets/img', 'assets/img');
 

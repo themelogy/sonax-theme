@@ -1,4 +1,4 @@
-<header class="c-layout-header c-layout-header-4 c-layout-header-default-mobile" data-minimize-offset="80">
+<header class="c-layout-header c-layout-header-4 c-layout-header-default-mobile c-bordered" data-minimize-offset="80">
     @include('partials/header/top-bar', ['active' => true])
     <div class="c-navbar">
         <div class="container">
