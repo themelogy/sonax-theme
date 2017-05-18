@@ -17,7 +17,7 @@
         <!-- BEGIN: INLINE NAV -->
         <nav class="c-top-menu c-pull-right">
 
-            {!! Menu::render('topbar', \Themes\Sonax\Presenters\TopMenuPresenter::class) !!}
+            {!! Menu::render('topbar', \Themes\Sonax\Presenter\TopMenuPresenter::class) !!}
 
             @if($currentUser)
             <ul class="c-links c-theme-ul">
