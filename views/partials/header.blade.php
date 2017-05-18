@@ -36,7 +36,7 @@
                 @include('partials/header/navigation/search-form', ['active' => true])
 
                 <nav class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-fonts-uppercase c-fonts-bold">
-                    {!! Menu::get('header', \Modules\Theme\Presenters\Sonax\HeaderMenuPresenter::class) !!}
+                    {!! Menu::get('header', \Themes\Sonax\Presenters\HeaderMenuPresenter::class) !!}
                 </nav>
 
             </div>

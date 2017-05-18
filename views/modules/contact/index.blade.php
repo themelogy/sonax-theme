@@ -52,7 +52,7 @@
                             </ul>
                         </div>
 						<div class="c-section" style="height:300px;">
-						@gmap('300px', '16', 'images/marker.png')
+						@gmap('300px', '16', 'img/marker.png')
 						</div>
                     </div>
 

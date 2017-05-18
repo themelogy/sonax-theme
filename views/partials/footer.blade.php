@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="c-container">
-                        @include('partials/footer/links', ['page'=>Page::findBySlug('kurumsal')])
+                        @include('partials/footer/links', ['page'=>Page::findBySlug('hizmetlerimiz')])
                     </div>
                 </div>
                 <div class="col-md-3">

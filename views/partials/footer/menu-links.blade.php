@@ -3,5 +3,5 @@
     <h3 class="c-font-uppercase c-font-bold c-font-white">{{ $menus->title }}</h3>
     <div class="c-line-left hide"></div>
 </div>
-{!! Menu::render($menu, \Modules\Theme\Presenters\Sonax\FooterMenuLinksPresenter::class) !!}
+{!! Menu::render($menu, \Themes\Sonax\Presenters\FooterMenuLinksPresenter::class) !!}
 @endif
