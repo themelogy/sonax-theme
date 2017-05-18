@@ -34,7 +34,7 @@
                     </p>
                 </div>
                 <div class="col-md-8 col-sm-12 c-links">
-                    {!! Menu::get('footer', \Modules\Theme\Presenters\Sonax\FooterMenuPresenter::class) !!}
+                    {!! Menu::get('footer', \Themes\Sonax\Presenter\FooterMenuPresenter::class) !!}
                 </div>
             </div>
         </div>

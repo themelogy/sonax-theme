@@ -1,4 +1,4 @@
-<?php namespace Themes\Sonax\Presenters;
+<?php namespace Themes\Sonax\Presenter;
 
 use Nwidart\Menus\Presenters\Presenter;
 

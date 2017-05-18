@@ -1,15 +1,15 @@
-<?php namespace Themes\Sonax\Presenters;
+<?php namespace Themes\Sonax\Presenter;
 
 use Nwidart\Menus\Presenters\Presenter;
 
-class HeaderMenuPresenter extends Presenter
+class TopMenuPresenter extends Presenter
 {
     /**
      * {@inheritdoc }.
      */
     public function getOpenTagWrapper()
     {
-        return PHP_EOL.'<ul class="nav navbar-nav c-theme-nav">'.PHP_EOL;
+        return PHP_EOL.'<ul class="c-links c-theme-ul">'.PHP_EOL;
     }
 
     /**
@@ -17,8 +17,7 @@ class HeaderMenuPresenter extends Presenter
      */
     public function getCloseTagWrapper()
     {
-        $navigation_ext = \View::make('partials.header.navigation.navigation-ext');
-        return PHP_EOL.$navigation_ext.'</ul>'.PHP_EOL;
+        return PHP_EOL.'</ul>'.PHP_EOL;
     }
 
     public function getCloseMegaTagWrapper()
@@ -50,13 +49,13 @@ class HeaderMenuPresenter extends Presenter
      */
     public function getMenuWithoutDropdownWrapper($item)
     {
-        return '<li'.$this->getActiveState($item).'><a class="c-link" href="'.$item->getUrl().'" '.$item->getAttributes().'>'.$item->getIcon().' '.$item->title.'</a></li>'.PHP_EOL;
+        return '<li'.$this->getActiveState($item).'><a href="'.$item->getUrl().'" '.$item->getAttributes().'>'.$item->getIcon().' '.$item->title.'</a></li>'.PHP_EOL;
     }
 
     /**
      * {@inheritdoc }.
      */
-    public function getActiveState($item, $state = ' class="c-active"')
+    public function getActiveState($item, $state = ' class=""')
     {
         return $item->isActive() ? $state : null;
     }
@@ -79,7 +78,7 @@ class HeaderMenuPresenter extends Presenter
      */
     public function getDividerWrapper()
     {
-        return '<li class="divider"></li>';
+        return '<li class="c-divider">|</li>';
     }
 
     /**
@@ -98,7 +97,7 @@ class HeaderMenuPresenter extends Presenter
         return '<li class="c-menu-type-classic '.$this->getActiveStateOnChild($item, ' c-active').'">
 		          <a href="'.$item->getUrl().'" class="c-link dropdown-toggle">
 					'.$item->getIcon().' '.$item->title.'
-					<span class="c-arrow c-toggler"><i class="fa fa-down"></i></span>
+					<span class="c-arrow c-toggler"></span>
 			      </a>
 			      <ul class="dropdown-menu c-menu-type-classic c-pull-left">
 			      	'.$this->getChildMenuItems($item).'
@@ -133,7 +132,7 @@ class HeaderMenuPresenter extends Presenter
         return '<li class="dropdown-submenu '.$this->getActiveStateOnChild($item, ' c-active').'">
 		          <a href="'.$item->getUrl().'">
 					'.$item->getIcon().' '.$item->title.'
-					<span class="c-arrow c-toggler pull-right"><i class="fa fa-angle-right hidden-xs"></i></span>
+					<span class="c-arrow c-toggler"></span>
 			      </a>
 			      <ul class="dropdown-menu c-pull-right">
 			      	'.$this->getChildMenuItems($item).'
