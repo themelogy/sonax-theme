@@ -6,8 +6,8 @@
         <div class="c-layout-breadcrumbs-1 c-raindrops c-fonts-uppercase c-fonts-bold">
             <div class="container">
                 <div class="c-page-title c-pull-left">
-                    <h3 class="c-font-uppercase c-font-white c-font-sbold">{{ $page->title }}</h3>
-                    <h4 class="c-font-thin c-font-white c-opacity-07"> {{ $page->title }}</h4>
+                    <h1 class="c-font-uppercase c-font-white c-font-sbold">{{ $page->title }}</h1>
+                    <h2 class="c-font-thin c-font-white c-opacity-07"> {{ $page->title }}</h2>
                 </div>
 
                 {!! Breadcrumbs::renderIfExists('page') !!}
